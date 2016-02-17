@@ -1,0 +1,16 @@
+ABOUT 
+
+Welcome to the CryptoVoter Voting Client – BTCS Voter Edition [beta].
+
+We are cryptographic currency developers looking to decentralize cryptocoin development through blockchain-based voting that allows for decentralized objective consensus on development related issues and more.
+
+It works by creating special vanity Bitcoin addresses corresponding with published question-answer pairs.  This newly created special vanity Bitcoin address ("vanity voting address") is imported into the user's wallet allowing them to send coins to themselves to publicly register votes.
+
+CryptoVoter is wholly-owned and operated by Blockchain Innovation Labs, Inc.
+
+For more information:
+
+info@cryptovoter.com
+info@thebcilabs.com
+
+[PATENT PENDING]

@@ -1,0 +1,10 @@
+
+[Desktop Entry]
+Name=cryptoVoter-btcs
+Comment=
+Exec=cryptoVoter-btcs
+Icon=/opt/cryptoVoter-btcs/bitcoinBlue.png
+Terminal=false
+Type=Application
+Categories=Application;
+Name[es_AR]=cryptoVoter-btcs

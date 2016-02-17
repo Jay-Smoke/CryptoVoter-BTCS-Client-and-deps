@@ -1,0 +1,3 @@
+To install the dependencyes run:
+
+sudo apt-get install libssl-dev libpcre3-dev

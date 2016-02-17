@@ -1,0 +1,44 @@
+AUTOMATIC VOTING INSTRUCTIONS
+
+Below, please find the instructions on how to have the voting client automatically process your vote.  Alternatively, you can choose to manually process your vote instead of having the client automatically process your vote by following the instructions for manually voting.
+First, we'll provide an overview of each step of the instructions required to automatically vote, followed by explanation of each step in detail. 
+
+AUTOMATIC VOTING INSTRUCTIONS (OVERVIEW)
+
+1. LAUNCH VOTING CLIENT
+2. SELECT VOTING ANSWER CHOICE
+3. CHOOSE AUTO VOTE OPTION
+4. SELECT NUMBER OF COINS TO VOTE WITH
+5. CONFIRM VOTE INFO TO CAST VOTE
+
+AUTOMATIC VOTING INSTRUCTIONS (IN DETAIL)
+
+1. LAUNCH VOTING CLIENT
+  a. Start the voting client application
+  b. Accept EULA to continue
+
+2. SELECT VOTING ANSWER CHOICE
+  a. In the 'Active Question' tab, review active voting question and available answer choices
+  b. Select answer choice and click 'Vote' button
+
+3. CHOOSE AUTO VOTE OPTION
+  a. After clicking the 'Vote' button you will be asked whether you want the voting client to automatically process your vote or if you want to manually process your vote.
+  b. Choose option to automatically process your vote.
+  c. When prompted, select the folder containing your wallet.dat and blockchain database file
+  d. Voting client will automatically generate your unique voting address
+  e. When prompted, enter your wallet passphrase (if any)
+  f. Voting client will automatically import your unique voting address into your wallet file
+  g. Voting client will confirm successful importation of your unique voting address
+  h. When prompted, choose option to automatically cast vote
+
+4. SELECT NUMBER OF COINS TO VOTE WITH
+  a. Voting client will display the number of coins used for prior votes on the same question.
+  b. Voting client will tell you how many coins you have available to vote with
+  c. When prompted, select the number of coins you want to cast your vote with
+  d. The voting client will then ask if you want to add a network fee to increase the likelihood of your transaction being included in the next block.  Default is 0.01 BTCS.
+
+5. CONFIRM VOTE INFO TO CAST VOTE
+  a. When prompted, confirm your voting selection and the voting client will automatically cast your vote
+  b. You can check whether your vote was successfully cast by searching your voting address on the Block-explorer of your choice.
+  c. Do not move or send your coins to another address until the voting period has completed.
+

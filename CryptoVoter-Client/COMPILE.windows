@@ -1,0 +1,63 @@
+Windows Command-line Build Instructions: CryptoVoter v.1.10.1 
+
+
+Start the build:
+
+	Download CryptoVoter source code (must have Github installed):
+
+		1. git clone https://github.com/cryptovoter-client/cryptovoter-client.git
+
+Download Qt toolchain:
+
+	Download Qt 5.4.2 MinGW 32 bit for Windows and install using defaults:
+
+		2.  http://download.qt.io/archive/qt/5.4/5.4.2/qt-opensource-windows-x86-mingw491_opengl-5.4.2.exe		
+
+	If you have problems try downloading QT’s unified installer (Qt 5.4.2 & Mingw491). 
+
+		2 (alternative).  http://www.qt.io/download-open-source/
+
+Build the sources:
+
+	Qmake and mingw need to be in the path environment tables.  
+
+	These utilities are installed with Qt SDK, usually on:
+	C:\Qt\Qt5.4.2\5.4\mingw491_32\bin\;C:\Qt\Qt5.4.2\Tools\mingw491_32\bin\;
+	
+	If you used QT’s unified installer, they should be here:
+	C:\Qt\Tools\mingw491_32;
+
+ 		3. Add the paths of qmake and mingw32-make to PATH environment variable.
+
+	Navigate to the source folder to find cryptoVoter.pro and execute the qmake command to generate a Makefile:
+
+		4.  qmake cryptoVoter.pro -r -spec win32-g++
+       
+	The prompt will return with no output if the Makefile generation is successfull
+
+       Execute the mingw-make command with the newly created Makefile:
+
+		5. mingw32xmake -f Makefile.Release       
+       
+
+	If you don’t see any error then the compilation was successful.
+       
+	You will find the executable file in release/CryptoVoter-btcs.exe
+
+
+External Dependencies:
+
+	The CryptoVoter voting client uses vanitygen and bitcoind as external programs. They must be in the same folder as 	cryptoVoter-btcs.exe or into some directory listed on windows PATH so the client can execute them.  Additionally, 		CryptoVoter needs dynamic link libraries (.dll) to function properly.
+       
+       	Get the external dependencies 
+       
+		6. git clone https://github.com/cryptovoter-client/wincompiledeps winbuild       
+       
+	Put the external dependencies together with the compiled application
+
+		7. copy release\CryptoVoter-btcs.exe winbuild\CryptoVoter-port32
+Complete Install:
+
+	And viola!  You should now be able to run the compiled CryptoVoter-btcs.
+
+		8.  winbuild\CryptoVoter-port32\CryptoVoter-btcs.exe

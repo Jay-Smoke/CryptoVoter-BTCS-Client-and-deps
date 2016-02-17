@@ -1,0 +1,102 @@
+Linux Build Instructions - CryptoVoter v.1.10.1
+
+
+Start Build:
+
+	Download CryptoVoter source code:
+
+		1. git clone https://github.com/CryptoVoter-client/cryptovoter-client.git
+
+Download the Qt toolchain:
+
+	Go to newly created cryptovoter directory.	
+	
+           	2. cd cryptovoter-client	
+	
+	Select Qt 5.4.2 (32 or 64 bits depending on your system):
+
+		Linux 64 bit
+		3A. wget http://download.qt.io/archive/qt/5.4/5.4.2/qt-opensource-linux-x64-5.4.2.run
+		Linux 32 bit
+		3B. wget http://download.qt.io/archive/qt/5.4/5.4.2/qt-opensource-linux-x86-5.4.2.run	
+
+	Give it execution permissions:
+
+		Linux 64 bit
+		4A. sudo chmod +x qt-opensource-linux-x64-5.4.2.run
+		Linux 32 bit
+		4B. sudo chmod +x qt-opensource-linux-x86-5.4.2.run
+
+	Install Qt + Qt creator (installation defaults):
+
+		Linux 64 bit
+		5A. ./qt-opensource-linux-x64-5.4.2.run		
+		Linux 32 bit
+		5B. ./qt-opensource-linux-x86-5.4.2.run
+
+Build the sources:
+
+	You should still be in the /cryptovoter-client/ folder
+
+	Execute the qmake command to generate a Makefile (make sure to replace [username] with your actual username):
+
+		6. /home/[username]/Qt5.4.2/5.4/gcc_64/bin/qmake cryptoVoter.pro -r -spec linux-g++
+
+	The prompt will return with no output if the Makefile generation is successful.
+
+	Execute the make command:
+
+		7. make
+
+	When the prompt returns, If you don’t see any error then the compilation was successfull.
+
+	You will find the executable file cryptoVoter-btcs  in the same folder.
+
+
+Install Dependencies:
+
+	Install library dependencies
+
+		8. sudo apt-get install libssl-dev libpcre3-dev sqlite3 	
+
+	CryptoVoter relies on two applications (vanitygen and bitcoind).  You have two 	options:  You can copy vanitygen 		and bitcoind in the source folder or add somewhere in ldconfig’s paths (i.e. you can make a simlink on /usr/bin).
+
+	We will copy them to source folder.
+	
+	Install app dependency 1: vanitygen
+
+		Linux 64 bit
+		9A. git clone https://github.com/cryptovoter-client/ubuntu64compiledeps deps
+		Linux 32 bit
+		9B. git clone https://github.com/cryptovoter-client/ubuntu32compiledeps deps
+
+	Build the sources from the linux console
+       
+		10. cd deps/installer/vanitygen	
+            	11. make	
+
+	You should see the compiled executable “vanitygen” on the same folder.  Now copy to cryptovoter folder. (make sure 	to replace [username] with your actual username)
+
+		12. cp  vanitygen /home/[username]/cryptovoter-client/	
+
+	Install app depenency 2: bitcoind
+	
+           	13. cp ../bitcoind/bitcoind /home/[username]/cryptovoter-client/
+		14. cd /home/[username]/cryptovoter-client/	
+	CryptoVoter also requires access to Qt SQLite modules.  Like the previous steps, you have two options:  You can 		copy vanitygen and bitcoind in the source folder or add somewhere in ldconfig’s paths (i.e. you can make a simlink 	on /usr/bin). If you have installed the Qt SDK they will be already on ldconfig path.
+
+
+	We will copy them to the source folder.  (make sure to replace [username] with 	your actual username)
+
+		15. cp deps/installer/sqldrivers/*.so /home/[username]/cryptovoter-client
+
+	The last step is copy over final supporting files for CryptoVoter 
+
+		16. cp deps/installer/*.ini /home/[username]/cryptovoter-client
+		17. cp deps/installer/*.txt /home/[username]/cryptovoter-client
+Complete Install:
+
+	And viola!  You should now be able to run the compiled cryptoVoter-btcs
+
+		18. ./cryptoVoter-btcs
+

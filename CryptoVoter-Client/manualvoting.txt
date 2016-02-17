@@ -1,0 +1,46 @@
+MANUAL VOTING INSTRUCTIONS
+
+Below, please find instructions on how to manually process your vote instead of having the voting client automatically process your vote.  You must have a copy of the QT Wallet client to manually vote.
+
+First, we'll provide an overview of each step of the instructions required to manually vote, followed by explanation of each step in detail. 
+
+MANUAL VOTING INSTRUCTIONS (OVERVIEW)
+
+1. LAUNCH VOTING CLIENT
+2. SELECT VOTING ANSWER CHOICE
+3. CHOOSE MANUAL VOTE OPTION
+4. IMPORT NEW VOTING ADDRESS INTO YOUR WALLET
+5. VOTE BY SENDING COINS TO VOTING ADDRESS
+
+MANUAL VOTING INSTRUCTIONS (IN DETAIL)
+
+1. LAUNCH VOTING CLIENT
+  a. Start the voting client application
+  b. Accept the EULA to continue
+
+2. SELECT VOTING ANSWER CHOICE
+  a. On 'Active Question' tab, review question wording and possible answer choices
+  b. Select your designated answer choice
+  c. Click 'Vote' button
+
+3. CHOOSE MANUAL VOTE OPTION
+  a. After clicking the 'Vote' button you will be asked whether you want the voting client to automatically process your vote or if you want to manually process your vote.
+  b. Choose option to manual process your vote.
+
+4. IMPORT NEW VOTING ADDRESS INTO YOUR WALLET
+  a. The voting client will generate a unique vanity voting address public-private key pair  that represents the question and your answer choice.
+  b. Manually import the private key into your Bitcoin wallet.
+    i. First launch the GUI QT Wallet client
+    ii. If your wallet is password protected, unlock your wallet by entering the debug console and enter 'walletpassphrase <yourpassword> 300'
+      1. Ex: CONSOLE:> walletpassphrase cryptopassword123 300
+    iii. After launching the GUI wallet client, in the debug console, enter "importprivkey <newly-generated private-key> <question-label>" with the private-key that the voting client generated and add your own label to identify the address for your records.
+      1. Ex: CONSOLE:> importprivkey '5myverylongprivatekey' 'Voting Q55'
+  c. Confirm that your unique voting address was successfully imported by checking your receiving addresses to confirm that it was added with the label you selected.
+
+5. VOTE BY SENDING COINS TO YOUR NEW VOTING ADDRESS
+  a. After you have confirmed that your unique vanity voting address has been successfully imported into your wallet client, then you are ready to vote.
+  b. To vote, send the number of coins you wish to vote with to your newly generated vanity voting address that you just imported.
+  c. Make sure to send the coins before the voting deadline has passed.
+  d. You can check whether your vote was successfully cast by searching your voting address on the Block-explorer of your choice.
+  e. Do not move or send your coins to another address until the voting period has completed.
+

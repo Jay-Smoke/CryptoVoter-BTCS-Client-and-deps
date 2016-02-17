@@ -1,0 +1,23 @@
+CRYPTOVOTER END-USER LICENSE AGREEMENT ("EULA")
+
+CONSENT
+By installing, using or continuing to use this software you are consenting to CryptoVoter's End User License Agreement (EULA) and you agree to be bound by the terms of this agreement. 
+
+LICENSE - OPEN SOURCE (AGPL) AND COMMERICAL
+The CryptoVoter voting software is developed by Blockchain Innovation Labs, Inc., ("BCILabs") and is dual licensed under open-source and commercial product licenses.   
+By offering different licensing options, BCILabs supports giving options to open-source communities and companies to pursue different product strategies.  Accordingly, BCI Labs offers CryptoVoter both under a commercial license for proprietary uses and, if utilized in connection with a licensed instance of Blockchain Innovation Labs, Inc.'s, webservices for the CryptoVoter client, the CryptoVoter client software is offered open-source under the GNU Affero General Public License, either version 3 of the License (AGPLv3) or (at your option) any later version, which requires any software derived from or using CryptoVoter to also be released open source under the same AGPLv3.  
+
+Therefore, in order to develop and use CryptoVoter, you must adhere to the obligations and definitions required by these license requirements. THUS, if you do not utilize a license instance of Blockchain Innovation Labs, Inc., for the related webservices or cannot adhere to the rules of the open-source license, a commercial license is required to use the product.
+
+A copy of the AGPLv3 is included below and can also be found online:  http://www.gnu.org/licenses.
+The CryptoVoter open-source code can be found here:  http://github.com/cryptovoter-client/cryptovoter
+LEGAL RIGHTS
+Except as expressly provided herein, end-user/licensee may not assign or transfer any of its rights under this Agreement (including its licenses with respect to the Licensed) without the prior written consent of Blockchain Innovation Labs, Inc. Unless the Customer is required by statute or regulation to apply the law of a state other than Texas, this Agreement will be governed by and construed in accordance with the laws of the State of Texas and the federal U.S. laws applicable therein, excluding any conflicts of law provisions, and the end-user/licensee and Blockchain Innovation Labs, Inc., agree to submit to the personal and exclusive jurisdiction of the courts located in Harris County, Texas.
+
+DISCLAIMER:
+THIS SOFTWARE IS A BETA TEST RELEASE.  THIS SOFTWARE AND SERVICE COMES WITH NO WARRANTY OF ANY KIND AND IS PROVIDED "AS-IS." THE LICENSEE AGREES THAT THE COMPANY WILL NOT BE HELD LIABLE FOR ANY DAMAGES, DIRECT OR INDIRECT, RESULTING FROM THE USE, MISUSE, OR MALFUNCTION OF THIS SOFTWARE OR SERVICE.
+THE SOFTWARE AND SERVICE IS RELEASED AS A BETA TEST VERSION AND MAY CONTAIN DEFECTS.  LICENSEE IS ADVISED TO SAFEGUARD IMPORTANT DATA, TO USE CAUTION AND NOT TO RELY IN ANY WAY ON THE CORRECT FUNCTIONING OR PERFORMANCE OF THE SOFTWARE OR SERVICE.
+ACCORDINGLY, YOU ARE ADVISED TO MAKE BACKUPS OF ANY WALLET FILES OR OTHER IMPORTANT SOFTWARE BEFORE USE.
+
+Copyright 2015 Blockchain Innovation Labs, Inc.
+

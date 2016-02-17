@@ -1,0 +1,23 @@
+echo installing dependecies...
+apt-get install autoreconf libssl-dev libpcre3-dev
+#git clone https://github.com/samr7/vanitygen
+cd vanitygen
+make clean
+make
+cd ..
+echo copying files..
+mkdir /opt/cryptoVoter
+cp ./cryptoVoter /opt/cryptoVoter/
+cp ./vanitygen/vanitygen /opt/cryptoVoter/
+cp ./vanitygen/keyconv /opt/cryptoVoter/
+cp ./bitcoin/bitcoind /opt/cryptoVoter/
+chmod +x /opt/cryptoVoter/cryptoVoter
+chmod +x /opt/cryptoVoter/vanitygen
+chmod +x /opt/cryptoVoter/keyconv
+chmod +x /opt/cryptoVoter/bitcoind
+echo making links..
+ln -s /opt/cryptoVoter/vanitygen /usr/bin/vanitygen
+ln -s /opt/cryptoVoter/keyconv /usr/bin/keyconv
+ln -s /opt/cryptoVoter/bitcoind /usr/bin/bitcoind
+ln -s /opt/cryptoVoter/cryptoVoter /usr/bin/cryptoVoter
+echo installation finished!
